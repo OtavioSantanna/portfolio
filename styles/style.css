@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Hubballi&family=Josefin+Sans:wght@100&family=PT+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Serif+Display&display=swap');
 
 /* Fonts usage: 
 font-family: 'Hubballi', sans-serif;
 font-family: 'Josefin Sans', sans-serif;
 font-family: 'PT Sans', sans-serif;
 font-family: Arial,Helvetica,sans-serif;
+font-family: 'Abril Fatface', serif;
+font-family: 'DM Serif Display', serif;
 */
 
 * {
