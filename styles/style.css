@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Hubballi&family=Josefin+Sans:wght@100&family=PT+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&family=Josefin+Sans:wght@100&family=PT+Sans:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Serif+Display&display=swap');
 
 /* Fonts usage: 
@@ -23,7 +23,7 @@ body {
 
 :root {
   --black-font-color: #0b090a;
-  --azul-escuro: #10002B;
+  --azul-escuro: #003366;
   --azul-claro: #01BAEF;
   --background: #F9F9F9;
   --verde: #20BF55;
@@ -59,4 +59,26 @@ header .logo {
   align-items: center;
   width: 10%;
   z-index: 5;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2vw;
+  font-size: 25px;
+}
+
+nav a {
+  display: flex;
+  font-size: 1.1rem;
+  font-family: 'PT Sans', sans-serif;
+  text-decoration: none;
+  color: var(--azul-escuro);
+  font-weight: 500;
+}
+
+nav .idioma {
+  background-color: #d9d9d9;
+  border-radius: 10px;
 }
