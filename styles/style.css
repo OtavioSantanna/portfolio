@@ -78,7 +78,87 @@ nav a {
   font-weight: 500;
 }
 
-nav .idioma {
-  background-color: #d9d9d9;
-  border-radius: 10px;
+.language {
+  position: relative;
+  width: 120px;
+  margin-left: 40px;
+  font-weight: bold;
 }
+.language-selected {
+  display: flex;   
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+}
+.language-selected:before {
+  content: '';
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url(https://www.countryflags.io/br/flat/32.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+
+.language-selected.change-br:before {
+  background-image: url(https://www.countryflags.io/br/flat/32.png);
+}
+.language-selected.change-en:before {
+  background-image: url(https://www.countryflags.io/us/flat/32.png);
+}
+.language-selected.change-es:before {
+  background-image: url(https://www.countryflags.io/es/flat/32.png);
+}
+
+.language ul {
+  position: absolute;
+  width: 140px;
+  background-color: #fff;
+  border: 1px solid #f8f8f8;
+  padding-top: 10px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.language ul li {
+  list-style: none;
+}
+
+.language ul li a {
+  display: block;
+  color: #252525;
+  padding: 5px 10px;
+}
+
+.language ul li:hover {
+  background-color: #f8f8f8;
+}
+
+.language ul li a:before {
+  content: '';
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+a.br:before {
+  background-image: url(https://www.countryflags.io/br/flat/32.png);
+}
+
+a.en:before {
+  background-image: url(https://www.countryflags.io/us/flat/32.png);
+}
+a.es:before {
+  background-image: url(https://www.countryflags.io/es/flat/32.png);
+}
+
+.language:hover ul {
+  display: block;
+}
+
+
