@@ -27,6 +27,7 @@ body {
   --azul-claro: #01BAEF;
   --background: #F9F9F9;
   --verde: #20BF55;
+  --roxo: #10002B;
 }
 
 .wave {
@@ -202,4 +203,83 @@ section .container .line .box {
   align-items: center;
   border-radius: 10px;
   background-color: #d9d9d9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.projetos {
+  width: 80%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.projetos h3 {
+  color: var(--azul-escuro);
+  font-family: 'PT Sans', sans-serif;
+  font-size: 2.3rem;
+}
+
+.projetos section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  overflow: hidden;
+}
+
+.projetos section .card-projeto {
+  width: 25vw;
+  height: auto;
+  border-radius: 20px;
+  background-color: #d9d9d9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-projeto .img-projeto {
+  width: 100%;
+  height: 40%;
+  object-fit: cover;
+}
+
+
+.projetos section .card-projeto h4{
+  overflow: hidden;
+  color: var(--azul-escuro);
+  padding-top: 10px;
+}
+
+.card-projeto p {
+  height: 25vh;
+  padding: 25px;
+  font-size: 1rem;
+  text-align: justify;
+  color: var(--azul-escuro);
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 500;
+  overflow: hidden;
+}
+
+
+.btn-projeto {
+  width: 80%;
+  height: 5vh;
+  border: none;
+  background-color: var(--azul-escuro);
+  border-radius: 25px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+
+.btn-projeto a { 
+  text-decoration: none;
+  color: var(--background);
 }
