@@ -149,10 +149,12 @@ section .sobre-mim {
   font-family: 'PT Sans', sans-serif;
   color: var(--azul-escuro);
   align-items: center;
+  over-flow: hidden;
 }
 
 section .sobre-mim h3 {
   font-size: 2.3rem;
+  over-flow: hidden;
 }
 
 section .sobre-mim p {
@@ -160,6 +162,7 @@ section .sobre-mim p {
   font-size: 1.5rem;
   text-align: center;
   font-weight: 300;
+  over-flow: hidden;
 }
 
 section .conhecimentos {
