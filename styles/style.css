@@ -135,7 +135,7 @@ main article ul .logo-curriculo {
 
 section {
   width: 100%;
-  height: auto;
+  height: 250vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -149,20 +149,23 @@ section .sobre-mim {
   font-family: 'PT Sans', sans-serif;
   color: var(--azul-escuro);
   align-items: center;
-  over-flow: hidden;
+  overflow: hidden;
+  
 }
 
 section .sobre-mim h3 {
   font-size: 2.3rem;
-  over-flow: hidden;
+  height: auto;
+  overflow: hidden;
 }
 
 section .sobre-mim p {
   width: 50%;
+  height: auto;
   font-size: 1.5rem;
   text-align: center;
   font-weight: 300;
-  over-flow: hidden;
+  overflow: hidden;
 }
 
 section .conhecimentos {
@@ -211,78 +214,96 @@ section .container .line .box {
 
 .projetos {
   width: 80%;
-  height: 80vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: 1.5rem;
+  overflow: hidden;
 }
 
 .projetos h3 {
   color: var(--azul-escuro);
   font-family: 'PT Sans', sans-serif;
   font-size: 2.3rem;
+  overflow: hidden;
 }
 
-.projetos section {
+.projetos section{
   width: 100%;
-  height: 100%;
+  height: auto;
   display: flex;
   flex-direction: row;
+  overflow: hidden;
   align-items: center;
   justify-content: center;
-  gap: 40px;
-  overflow: hidden;
 }
 
-.projetos section .card-projeto {
-  width: 25vw;
-  height: auto;
-  border-radius: 20px;
-  background-color: #d9d9d9;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.card-projeto {
+  width: calc(50% - 20px);
+  margin: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: var(--background);
+  border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.card-projeto .img-projeto {
-  width: 100%;
-  height: 40%;
-  object-fit: cover;
-}
-
-
-.projetos section .card-projeto h4{
   overflow: hidden;
-  color: var(--azul-escuro);
-  padding-top: 10px;
+}
+
+.img-projeto {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.card-projeto h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  color: #003366;
 }
 
 .card-projeto p {
-  height: 25vh;
-  padding: 25px;
-  font-size: 1rem;
-  text-align: justify;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
   color: var(--azul-escuro);
-  font-family: 'PT Sans', sans-serif;
-  font-weight: 500;
-  overflow: hidden;
 }
 
-
 .btn-projeto {
-  width: 80%;
-  height: 5vh;
-  border: none;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
   background-color: var(--azul-escuro);
-  border-radius: 25px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  margin-bottom: 25px;
-  overflow: hidden;
+  color: var(--azul-escuro);
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  color: var(--background);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-projeto:hover {
+  background-color: var(--azul-claro);
+}
+
+@media screen and (max-width: 768px) {
+  .card-projeto {
+      width: 100%; /* Em telas menores, cartões ocupam 100% da largura */
+  }
 }
 
 .btn-projeto a { 
   text-decoration: none;
   color: var(--background);
+}
+
+footer {
+  width: 100%;
+  height: 40vh;
+  background-color: #10002B;
+  box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.5);
 }
