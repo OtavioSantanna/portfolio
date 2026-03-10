@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,10 @@
   <link rel="stylesheet" href="styles/style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body>
   <img class="wave" src="assets/wave-certa.svg ">
-  <header  id="home">
+  <header id="home">
     <a class="logo" href="index.html">
       <img src="assets/otavio-logo.svg">
     </a>
@@ -27,71 +29,159 @@
       <h1>Otávio Santana</h1>
       <h2>Web developer</h2>
       <ul>
-        <li><a href="https://www.linkedin.com/in/ot%C3%A1vio-santana-possenti-44933a265/"><img src="assets/linkedin.svg" width="50px"></a></li>
-        <li><a href="https://github.com/OtavioSantanna"><img src="assets/githubgitgub.svg" width="50px"></a></li>
-        <li><a href="assets/CurriculoOtavio.pdf"><img src="assets/curriculo2.svg" class="logo-curriculo"></a></li>
+        <li><a href="https://www.linkedin.com/in/ot%C3%A1vio-santana-possenti-44933a265/" target="_blank"><img
+              src="assets/linkedin.svg" width="50px"></a></li>
+        <li><a href="https://github.com/OtavioSantanna"><img src="assets/githubgitgub.svg" width="50px"
+              target="_blank"></a></li>
+        <li><a href="assets/CurriculoOtavio.pdf"><img src="assets/curriculo2.svg" class="logo-curriculo"
+              target="_blank"></a></li>
       </ul>
     </article>
     <section>
       <div class="sobre-mim" id="sobre">
         <h3>Sobre mim</h3>
-        <p>A três anos decidi me aventurar no mundo da programação, foi então que descobri uma paixão. 
-          Desde lá venho estudando e me aperfeiçoando, para conseguir o meu primeiro emprego na área. Formado em técnico de desenvolvimento de sistemas e cursando engenharia de software 
+        <p>A três anos decidi me aventurar no mundo da programação, foi então que descobri uma paixão.
+          Desde lá venho estudando e me aperfeiçoando, para conseguir o meu primeiro emprego na área. Formado em técnico
+          de desenvolvimento de sistemas e cursando engenharia de software
         </p>
       </div>
       <div class="conhecimentos" id="conhecimentos">
         <h3>Conhecimentos</h3>
-        <div class="container">
-          <div class="line">
-            <div class="box"><img src="assets/html-logo.svg" width="85%"></div>
-            <div class="box"><img src="assets/css-logo.svg" width="100%"></div>
-            <div class="box"><img src="assets/js-logo.svg" width="70%"></div>
+
+        <div class="skills-grid">
+
+          <div class="skill">
+            <img src="assets/html-logo.svg" alt="HTML">
+            <span>HTML</span>
           </div>
-          <div class="line">
-            <div class="box"><img src="assets/php-logo.svg" width="80%"></div>
-            <div class="box"><img src="assets/mySql-logo.svg" width="80%"></div>
-            <div class="box"><img src="assets/git-logo.svg" width="70%"></div>
+
+          <div class="skill">
+            <img src="assets/css-logo.svg" alt="CSS">
+            <span>CSS</span>
+          </div>
+
+          <div class="skill">
+            <img src="assets/js-logo.svg" alt="JavaScript">
+            <span>JavaScript</span>
+          </div>
+
+          <div class="skill">
+            <img src="assets/php-logo.svg" alt="PHP">
+            <span>PHP</span>
+          </div>
+
+          <div class="skill">
+            <img src="assets/mysql-logo.svg" alt="MySQL">
+            <span>MySQL</span>
+          </div>
+
+          <div class="skill">
+            <img src="assets/git-logo.svg" alt="Git">
+            <span>Git</span>
+          </div>
+
+          <div class="skill">
+            <img src="assets/nodelogo.png">
+            <span>Node.js</span>
+          </div>
+
+          <div class="skill">
+            <img src="assets/openedge.png">
+            <span>Progress ABL</span>
           </div>
         </div>
       </div>
-      <div class="projetos" id="projetos">
+      <section class="projetos" id="projetos">
         <h3>Projetos</h3>
-        <section>
+        <div class="projetos-grid">
+
           <div class="card-projeto">
-            <img class="img-projeto" src="assets/noar print.png">
-            <h4>N.O.A.R</h4>
-            <p>
-              O N.O.A.R. é um grupo voluntário, que
-              tem como objetivo realizar operações aéreas e auxiliar o corpo de bombeiros.
-              Neste projeto em grupo, criei uma aplicação web, que auxilia o registro e gerenciamento de ocorrencias. <br>
-              <br>
-              Este projeto não está hospedado <BR>
-              Linguagens ultilizadas:
-              PHP | JS | SQL
-            </p>
-            <button class="btn-projeto" type="button"><a href="https://github.com/OtavioSantanna/app-bombeiros-noar">Visualizar repositorio</a></button>
+            <img class="img-projeto" src="assets/noar.png" alt="Projeto NOAR">
+            <div class="conteudo-projeto">
+              <h4>N.O.A.R</h4>
+              <p>
+                Sistema web desenvolvido para auxiliar o registro e gerenciamento
+                de ocorrências em operações aéreas realizadas por um grupo voluntário
+                de apoio ao corpo de bombeiros.
+              </p>
+              <div class="techs">
+                <span>PHP</span>
+                <span>JavaScript</span>
+                <span>MySQL</span>
+              </div>
+              <a class="btn-projeto" href="https://github.com/OtavioSantanna/app-bombeiros-noar" target="_blank"
+                rel="noopener noreferrer">
+                Ver repositório
+              </a>
+            </div>
           </div>
+
           <div class="card-projeto">
-            <img class="img-projeto" src="assets/print-cabuailo.png">
-            <h4>Cabuailo</h4>
-            <p>
-              Neste projeto em parceria com um amigo, idealizei e ajudei a criar um aplicativo para o gerenciamento de barbearias.
-              Onde nele o usuario pode cadastrar sua barbearia, e receber agendamentos do cliente que também ultiliza o app.
-              <br>
-              <br>
-              Este projeto não está hospedado <BR>
-                Linguagens ultilizadas:
-                PHP | JS | SQL
-            </p>
-            <button class="btn-projeto" type="button"><a href="https://github.com/plxulo/cabuailo">Visualizar repositorio</a></button>
+            <img class="img-projeto" src="assets/print-cabuailo.png" alt="Cabuailo">
+            <div class="conteudo-projeto">
+              <h4>Cabuailo</h4>
+              <p>
+                Sistema web desenvolvido para auxiliar o registro e gerenciamento
+                de ocorrências em operações aéreas realizadas por um grupo voluntário
+                de apoio ao corpo de bombeiros.
+              </p>
+              <div class="techs">
+                <span>PHP</span>
+                <span>JavaScript</span>
+                <span>MySQL</span>
+              </div>
+              <a class="btn-projeto" href="https://github.com/OtavioSantanna/app-bombeiros-noar" target="_blank"
+                rel="noopener noreferrer">
+                Ver repositório
+              </a>
+            </div>
           </div>
-        </section>
-      </div>
+
+          <div class="card-projeto">
+            <img class="img-projeto" src="assets/Logo_TOTVS.jpg" alt="X-Tudo">
+            <div class="conteudo-projeto">
+              <h4>X-Tudo</h4>
+              <p>
+                O Hamburgueria XTudo é um sistema de gerenciamento desenvolvido em Progress OpenEdge 4GL, 
+                voltado para o controle administrativo de uma hamburgueria. Realizado como conclusão do curso de Progress ABL ofericido pela TOTVS.
+              </p>
+              <div class="techs">
+                <span>Progress ABL</span>
+              </div>
+              <a class="btn-projeto" href="https://github.com/OtavioSantanna/xtudo" target="_blank"
+                rel="noopener noreferrer">
+                Ver repositório
+              </a>
+            </div>
+          </div>
+
+          <div class="card-projeto">
+            <img class="img-projeto" src="assets/taskfy.png" alt="Taskfy">
+            <div class="conteudo-projeto">
+              <h4>Taskfy</h4>
+              <p>
+                Taskfy é uma aplicação web para gerenciamento de tarefas desenvolvida com Node.js, Express e MySQL.
+              </p>
+              <div class="techs">
+                <span>Node.js</span>
+                <span>Express</span>
+                <span>SQL</span>
+              </div>
+              <a class="btn-projeto" href="https://github.com/Taskfy-team/Taskfy" target="_blank"
+                rel="noopener noreferrer">
+                Ver repositório
+              </a>
+            </div>
+          </div>
+
+
+        </div>
+        </div>
+      </section>
     </section>
   </main>
-  <!-- <footer>
-    <h>Contato:</h>
-  </footer> -->
+
 </body>
 <script src="/js/index.js"></script>
+
 </html>
