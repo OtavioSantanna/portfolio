@@ -309,11 +309,12 @@ footer {
 }
 
 .skills-grid {
-  width: 60vw;
+  width: 50vw;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   margin-top: 20px;
+  overflow-x: hidden;
 }
 
 .skill {
@@ -327,10 +328,11 @@ footer {
   align-items: center;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   transition: transform 0.2s ease;
+  overflow-x: hidden;
 }
 
 .skill img {
-  width: 180px;
+  width: 150px;
 }
 
 .skill span {
@@ -345,13 +347,96 @@ footer {
 
 @media (max-width: 768px){
 
-.skills-grid{
-  grid-template-columns: repeat(2, 150px);
+  .skills-grid{
+    grid-template-columns: repeat(2, 150px);
+  }
+
+  .skill{
+    width:150px;
+    height:150px;
+  }
+
 }
 
-.skill{
-  width:150px;
-  height:150px;
+.experiencia{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
 }
 
+.experiencia h3{
+  font-size: 2.3rem;
+  font-family: 'PT Sans', sans-serif;
+  color: var(--roxo);
+}
+
+.timeline{
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* linha vertical */
+.timeline::before{
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background: var(--verde);
+}
+
+.timeline-item{
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  position: relative;
+}
+
+/* bolinha da timeline */
+.timeline-dot{
+  width: 16px;
+  height: 16px;
+  background: var(--azul-escuro);
+  border-radius: 50%;
+  margin-top: 10px;
+  flex-shrink: 0;
+}
+
+/* card */
+.timeline-card{
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.cargo{
+  font-weight: bold;
+  color: var(--verde);
+}
+
+.empresa{
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.periodo{
+  font-size: 0.8rem;
+  color: #888;
+  margin-bottom: 5px;
+}
+
+.timeline-card p{
+  font-size: 0.9rem;
+  line-height: 1.4;
 }
